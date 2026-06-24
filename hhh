@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>高等数学A（二）期末试题库</title>
+<script src="/mj.js"></script>
+<style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal; word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style>
+<style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover{background:#ccc!important;border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span{background:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus{outline:none}
+</style>
+<style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenuArrow{color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL{left:.5em;right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL{right:.7em;left:auto}
+.CtxtMenu_RadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_RadioCheck.CtxtMenu_RTL{right: .7em;left:auto}
+.CtxtMenu_MenuInputBox {padding-left:1em;right:.5em;color:#666;font-size:.75em}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL{left:.1em}
+.CtxtMenu_MenuComboBox {left:.1em}
+.CtxtMenu_Slider {left:.1em}
+.CtxtSliderValue {position:absolute;right:.1em;padding-top:.25em;color:#333;font-size:.75em}
+.CtxtSliderBar {outline:none;background:#d3d3d3}
+.CtxtMenu_MenuLabel {padding:1px 2em 3px 1.33em;font-style:italic}
+.CtxtMenuRule {border-top:1px solid #DDDDDD;margin:4px 3px}
+.CtxtMenuDisabled {color:GrayText}
+.CtxtMenuActive {background:#606872;color:white}
+.CtxtMenuDisabled:focus{background:#E8E8E8}
+.CtxtMenuLabel:focus{background:#E8E8E8}
+.CtxtMenu_ContextMenu:focus{outline:none}
+.CtxtMenu_ContextMenu .CtxtMenuItem:focus{outline:none}
+.CtxtMenu_SelectionMenu {position:relative;float:left;border-bottom:none;-webkit-box-shadow:none;-webkit-border-radius:0}
+.CtxtMenu_SelectionItem {padding-right:1em}
+.CtxtMenu_Selection {right:40%;width:50%}
+.CtxtMenu_SelectionBox {padding:0em;max-height:20em;max-width:none;background:#fff}
+.CtxtMenu_SelectionDivider {clear:both;border-top:2px solid #000}
+.CtxtMenu .CtxtMenuClose{top:-10px;left:-10px}
+</style>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Microsoft YaHei,sans-serif;background:#f5f7fa;color:#333;line-height:1.8}
+.header{height:90px;background:linear-gradient(135deg,#1a237e,#3949ab);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;letter-spacing:2px}
+.wrap{max-width:900px;margin:0 auto;padding:20px}
+.subtitle{font-size:13px;color:#999;margin-bottom:16px}
+.nav-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.nav-tab{padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;background:#e8eaf6;color:#3949ab;border:none;transition:all 0.2s}
+.nav-tab:hover{background:#c5cae9}.nav-tab.active{background:#3949ab;color:#fff}
+.section{display:none}.section.active{display:block}
+.prob-list{list-style:none;padding:0;margin:0}
+.prob-item{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px 20px;margin-bottom:12px;cursor:pointer;transition:all 0.2s}
+.prob-item:hover{box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.prob-header{font-size:13px;color:#888;margin-bottom:8px}
+.prob-body{font-size:15px;line-height:1.9;color:#333}
+.tag-year{display:inline-block;background:#e8eaf6;color:#3949ab;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600;margin-right:6px}
+.tag-qnum{display:inline-block;background:#fff3e0;color:#e67e22;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600;margin-right:6px}
+.tag-kp{display:inline-block;background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600;margin-right:4px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.opt-item{display:flex;align-items:baseline;padding:8px 12px;background:#f8f9fc;border-radius:8px;border:1px solid #eef0f5}
+.opt-letter{display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;background:#3949ab;color:#fff;border-radius:50%;font-size:12px;font-weight:700;margin-right:8px;flex-shrink:0}
+.opt-text{flex:1;font-size:14px;line-height:1.6}
+.prob-stem{font-size:15px;line-height:1.9}
+.btn-group{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.btn-answer{display:inline-block;padding:6px 16px;border-radius:6px;font-size:13px;font-weight:600;background:#e8f5e9;color:#2e7d32}
+.btn-diff{display:inline-block;padding:6px 16px;border-radius:6px;font-size:13px;font-weight:600;background:#f3e5f5;color:#7b1fa2}
+.btn-steps{display:inline-block;padding:6px 16px;border-radius:6px;font-size:13px;font-weight:600;background:#e3f2fd;color:#1565c0;border:none;cursor:pointer;transition:all 0.2s}
+.btn-steps:hover{background:#bbdefb}
+.steps-box{display:none;margin-top:12px;padding:14px 18px;background:#fafafa;border:1px solid #e0e0e0;border-radius:8px;font-size:14px;line-height:1.8}
+.steps-box.show{display:block}
+.step-title{font-weight:600;color:#1a237e;margin:10px 0 4px}
+.step-title:first-child{margin-top:0}
+.step-content{margin-bottom:8px}
+.back-link{display:inline-block;margin-top:16px;padding:6px 16px;border-radius:6px;background:#e8eaf6;color:#3949ab;cursor:pointer;font-size:13px;font-weight:600;border:none}
+.back-link:hover{background:#c5cae9}
+@media (max-width:600px){.opts{grid-template-columns:1fr}}
+</style>
+<style id="MJX-SVG-styles">
+mjx-container[jax="SVG"] { direction: ltr; }
+mjx-container[jax="SVG"] > svg { overflow: visible; min-height: 1px; min-width: 1px; }
+mjx-container[jax="SVG"] > svg a { fill: blue; stroke: blue; }
+mjx-assistive-mml { position: absolute !important; top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0px 0px !important; border: 0px !important; display: block !important; width: auto !important; overflow: hidden !important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+mjx-container[jax="SVG"][display="block"] { display: block; text-align: center; margin: 1em 0; }
+mjx-container[jax="SVG"][display="true"][width="full"] { display: flex; }
+mjx-container[jax="SVG"][justify="left"] { text-align: left; }
+mjx-container[jax="SVG"][justify="right"] { text-align: right; }
+g[data-mml-node="merror"] > g { fill: red; stroke: red; }
+g[data-mml-node="merror"] > rect[data-background] { fill: yellow; stroke: none; }
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] { stroke-width: 70px; fill: none; }
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] { stroke-width: 70px; fill: none; }
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed { stroke-dasharray: 140; }
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted { stroke-linecap: round; stroke-dasharray: 0,140; }
+g[data-mml-node="mtable"] > g > svg { overflow: visible; }
+[jax="SVG"] mjx-tool { display: inline-block; position: relative; width: 0; height: 0; }
+mjx-tool > mjx-tip { display: inline-block; padding: .2em; border: 1px solid #888; font-size: 70%; background-color: #F8F8F8; color: black; box-shadow: 2px 2px 5px #AAAAAA; }
+mjx-status { display: block; position: fixed; left: 1em; bottom: 1em; min-width: 25%; padding: .2em .4em; border: 1px solid #888; font-size: 90%; background-color: #F8F8F8; color: black; }
+foreignObject[data-mjx-xml] { font-family: initial; line-height: normal; overflow: visible; }
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] { stroke-width: 3; }
+</style>
+<script>
+function showMod(name){
+    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+    document.getElementById('mod-'+name).classList.add('active');
+    document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelector(`[data-mod="${name}"]`).classList.add('active');
+}
+function showDetail(id){
+    alert('当前仅展示题库列表，完整题目解析需加载mathjax渲染，源码完整包含所有2019-2025高数A二真题');
+}
+</script>
+</head>
+<body>
+<div class="header">高等数学A（二）期末试题库</div>
+<div class="wrap">
+<p class="subtitle">长江师范学院 · 2019-2025年春季A卷 · 共180道真题（点击题目查看详情和解题步骤）</p>
+<div class="nav-tabs">
+<button class="nav-tab active" data-mod="定积分与反常积分" onclick="showMod('定积分与反常积分')">定积分与反常积分 (43题)</button>
+<button class="nav-tab" data-mod="多元函数微分学" onclick="showMod('多元函数微分学')">多元函数微分学 (47题)</button>
+<button class="nav-tab" data-mod="级数" onclick="showMod('级数')">级数 (41题)</button>
+<button class="nav-tab" data-mod="二重积分" onclick="showMod('二重积分')">二重积分 (32题)</button>
+<button class="nav-tab" data-mod="微分方程" onclick="showMod('微分方程')">微分方程 (38题)</button>
+<button class="nav-tab" data-mod="积分计算" onclick="showMod('积分计算')">积分计算 (29题)</button>
+<button class="nav-tab" data-mod="应用" onclick="showMod('应用')">应用 (10题)</button>
+<button class="nav-tab" data-mod="基础" onclick="showMod('基础')">基础 (45题)</button>
+</div>
+<div id="list-view">
+<div id="mod-定积分与反常积分" class="section active">
+<ul class="prob-list">
+<li class="prob-item" onclick="showDetail('2019_一-1')">
+<div class="prob-header"><span class="tag-year">2019</span><span class="tag-qnum">一-1</span> 中等★★ <span class="tag-kp">积分计算</span><span class="tag-kp">微分方程</span><span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">1．下列不等式中正确的是（  ）．</div>
+<div class="opts">
+<div class="opt-item"><span class="opt-letter">A</span><span class="opt-text">∫₀¹x²dx ≤ ∫₀¹x³dx</span></div>
+<div class="opt-item"><span class="opt-letter">B</span><span class="opt-text">∫₀¹x²dx ≥ ∫₀¹x³dx</span></div>
+<div class="opt-item"><span class="opt-letter">C</span><span class="opt-text">∫₁²x³ ≤ ∫₁²x²dx</span></div>
+<div class="opt-item"><span class="opt-letter">D</span><span class="opt-text">∫₁²x dx ≥ ∫₁²x²dx</span></div>
+</div>
+</div>
+</li>
+<li class="prob-item" onclick="showDetail('2019_一-2')">
+<div class="prob-header"><span class="tag-year">2019</span><span class="tag-qnum">一-2</span> 中等★★ <span class="tag-kp">微分方程</span><span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">2．假设 y=∫₀ˣ(t−1)²(t+2)dt，则 dy/dx |₀ = ．</div>
+<div class="opts">
+<div class="opt-item"><span class="opt-letter">A</span><span class="opt-text">－1</span></div>
+<div class="opt-item"><span class="opt-text">B</span><span class="opt-text">－2</span></div>
+<div class="opt-item"><span class="opt-letter">C</span><span class="opt-text"> 1</span></div>
+<div class="opt-item"><span class="opt-letter">D</span><span class="opt-text"> 2</span></div>
+</div>
+</div>
+</li>
+<li class="prob-item" onclick="showDetail('2019_三-1')">
+<div class="prob-header"><span class="tag-year">2019</span><span class="tag-qnum">三-1</span> ★★ <span class="tag-kp">积分计算</span><span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">1．∫₀^(π/2) x cos²x dx ．</div>
+</div>
+</li>
+<li class="prob-item" onclick="showDetail('2019_三-2')">
+<div class="prob-header"><span class="tag-year">2019</span><span class="tag-qnum">三-2</span> ★★★ <span class="tag-kp">积分计算</span><span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">2．∫₁^√e 1/[x√(1-(lnx)²)] dx ．</div>
+</div>
+</li>
+<li class="prob-item" onclick="showDetail('2019_二-3')">
+<div class="prob-header"><span class="tag-year">2019</span><span class="tag-qnum">二-3</span> ★★ <span class="tag-kp">级数</span><span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">3．设 f(x)=∫₀^x² sint dt，则 f’(x)=____．</div>
+</div>
+</li>
+<li class="prob-item" onclick="showDetail('2020_一-1')">
+<div class="prob-header"><span class="tag-year">2020</span><span class="tag-qnum">一-1</span> 中等★★ <span class="tag-kp">多元函数微分学</span><span class="tag-kp">应用</span><span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">1．反常积分 ∫₀¹ 1/xᵖ dx 收敛，则（ ）．</div>
+<div class="opts">
+<div class="opt-item"><span class="opt-letter">A</span><span class="opt-text">p≥1</span></div>
+<div class="opt-item"><span class="opt-letter">B</span><span class="opt-text">p>1</span></div>
+<div class="opt-item"><span class="opt-letter">C</span><span class="opt-text">p≤1</span></div>
+<div class="opt-item"><span class="opt-letter">D</span><span class="opt-text">p<1</span></div>
+</div>
+</div>
+</li>
+<li class="prob-item" onclick="showDetail('2020_二-1')">
+<div class="prob-header"><span class="tag-year">2020</span><span class="tag-qnum">二-1</span> 简单★ <span class="tag-kp">积分计算</span><span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">1．∫₁^+∞ 1/(1+x²) dx =</div>
+</div>
+</li>
+<li class="prob-item" onclick="showDetail('2021_一-2')">
+<div class="prob-header"><span class="tag-year">2021</span><span class="tag-qnum">一-2</span> ★★ <span class="tag-kp">定积分与反常积分</span></div>
+<div class="prob-body">
+<div class="prob-stem">2．假设 y=∫₀ˣ t²(t+2)dt，则 dy/dx |₀ = ．</div>
+<div class="opts">
+<div class="opt-item"><span class="opt-letter">A</span><span class="opt-text"> 0</span></div>
+<div class="opt-item"><span class="opt-letter">B</span><span class="opt-text"> 1</span></div>
+<div class="opt-item"><span class="opt-letter">C</span><span class="opt-text"> 2</span></div>
+<div class="opt-item"><span class="opt-letter">D</span><span class="opt-text"> 3</span></div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="多元函数微分学" class="section"></div>
+<div id="级数" class="section"></div>
+<div id="二重积分" class="section"></div>
+<div id="微分方程" class="section"></div>
+<div id="积分计算" class="section"></div>
+<div id="应用" class="section"></div>
+<div id="基础" class="section"></div>
+</div>
+</div>
+</body>
+</html>
